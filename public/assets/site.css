@@ -97,7 +97,7 @@ p { margin: 0 0 1em; }
 .top .wrap { display: flex; align-items: center; gap: .8rem; min-height: 72px; }
 .brand { display: flex; align-items: center; gap: .7rem; color: var(--ink); text-decoration: none; margin-right: auto; }
 .brand:hover { text-decoration: none; color: var(--ink); }
-.brand img { width: 42px; height: 42px; border-radius: 10px; object-fit: cover; box-shadow: 0 0 0 1px rgba(11,28,51,.12); }
+.brand img { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; box-shadow: 0 0 0 1px rgba(11,28,51,.16); }
 .brand strong { font-family: var(--serif); font-weight: 400; font-size: 1.25rem; display: block; letter-spacing: -.02em; line-height: 1; color: var(--ink); }
 .brand span span, .brand > span > span { display: block; font-family: var(--ff-body); font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-top: .2rem; }
 .nav { display: flex; align-items: center; gap: .15rem; font-weight: 550; font-size: .92rem; }

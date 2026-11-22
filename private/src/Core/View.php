@@ -52,14 +52,15 @@ final class View
         }
         echo '<meta property="og:image" content="' . h(url('/og.jpg')) . '">';
         echo '<meta name="theme-color" content="#0B1C33">';
-        echo '<link rel="icon" href="' . h(url('/favicon.svg')) . '" type="image/svg+xml">';
-        echo '<link rel="stylesheet" href="' . h(url('/assets/site.css?v=150')) . '">';
-        echo '<script src="' . h(url('/assets/site.js?v=150')) . '" defer></script>';
+        echo '<link rel="icon" href="' . h(url('/favicon.png')) . '" type="image/png">';
+        echo '<link rel="apple-touch-icon" href="' . h(url('/brand/logo.png')) . '">';
+        echo '<link rel="stylesheet" href="' . h(url('/assets/site.css?v=151')) . '">';
+        echo '<script src="' . h(url('/assets/site.js?v=151')) . '" defer></script>';
         echo '</head><body' . ($desk ? ' class="is-desk"' : '') . '>';
         echo '<a class="skip" href="#main">Skip to content</a>';
         echo '<header class="top"><div class="wrap">';
         echo '<a class="brand" href="' . h(url('/')) . '">';
-        echo '<img src="' . h(url('/brand/logo.jpg')) . '" alt="" width="64" height="64">';
+        echo '<img src="' . h(url('/brand/logo.png')) . '" alt="" width="64" height="64">';
         echo '<span><strong>Evolve Hire</strong><span>Nagpur desk</span></span></a>';
         echo '<button class="navtoggle" type="button" aria-expanded="false" aria-controls="nav"><span class="navtoggle-bar"></span><span class="navtoggle-bar"></span><span class="navtoggle-bar"></span><span class="sr">Menu</span></button>';
         $here = path();
