@@ -1,0 +1,12 @@
+# Live cPanel secrets and runtime data. Copy config.sample.php to config.php on the server.
+private/config.php
+private/installed.lock
+private/storage/*
+!private/storage/.htaccess
+!private/storage/.gitkeep
+private/logs/*
+!private/logs/.htaccess
+!private/logs/.gitkeep
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm

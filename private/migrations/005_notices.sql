@@ -1,0 +1,19 @@
+-- Evolve Hire 005 — in-app notice feed and website contact messages.
+
+CREATE TABLE IF NOT EXISTS notifications (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  kind VARCHAR(20) NOT NULL,
+  subject VARCHAR(180) NOT NULL,
+  body TEXT NOT NULL,
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS contact_messages (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(120) NOT NULL,
+  email VARCHAR(190) NOT NULL,
+  phone VARCHAR(20) NOT NULL DEFAULT '',
+  message VARCHAR(2000) NOT NULL,
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  KEY contact_email (email)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

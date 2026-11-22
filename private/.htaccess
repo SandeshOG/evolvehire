@@ -1,0 +1,9 @@
+# Lock down app internals from the web (config, SQLite/DB creds, CVs, logs).
+# Works on Apache 2.4 (cPanel/LiteSpeed default) and legacy 2.2 stacks.
+<IfModule mod_authz_core.c>
+  Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+  Order allow,deny
+  Deny from all
+</IfModule>
